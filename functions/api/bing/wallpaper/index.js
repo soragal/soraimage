@@ -8,7 +8,7 @@ export async function onRequest(context) {
       next, // used for middleware or to fetch assets
       data, // arbitrary space for passing data between middlewares
     } = context;
-    const res = await fetch(`https://www.loliapi.com/acg/HPImageArchive.aspx?format=js&idx=0&n=1`);
+    const res = await fetch(`https://www.loliapi.com/acg/`);
     const bing_data = await res.json();
     const return_data={
         "status":true,
